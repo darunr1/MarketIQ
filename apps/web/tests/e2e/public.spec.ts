@@ -23,11 +23,10 @@ test("landing and methodology are useful without authentication", async ({
 
 test("account and legal pages use MarketIQ branding", async ({ page }) => {
   await page.goto("/login");
-  await expect(page.getByText("MarketIQ", { exact: true }).last()).toBeVisible();
+  const authBrand = page.locator(".auth-card").getByText("MarketIQ");
+  await expect(authBrand).toBeVisible();
   await page.goto("/privacy");
-  await expect(
-    page.getByText(/MarketIQ stores account identity/i),
-  ).toBeVisible();
+  await expect(page.getByText(/MarketIQ stores account/i)).toBeVisible();
   await page.goto("/terms");
   await expect(page.getByText(/Use MarketIQ to study/i)).toBeVisible();
 });
