@@ -25,7 +25,9 @@ test("account and legal pages use MarketIQ branding", async ({ page }) => {
   await page.goto("/login");
   await expect(page.getByText("MarketIQ", { exact: true }).last()).toBeVisible();
   await page.goto("/privacy");
-  await expect(page.getByText(/MarketIQ stores account identity/i)).toBeVisible();
+  await expect(
+    page.getByText(/MarketIQ stores account identity/i),
+  ).toBeVisible();
   await page.goto("/terms");
   await expect(page.getByText(/Use MarketIQ to study/i)).toBeVisible();
 });
