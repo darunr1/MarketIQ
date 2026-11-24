@@ -36,7 +36,7 @@ export default async function Image({
           alignItems: "center",
         }}
       >
-        <div style={{ fontSize: 42, fontWeight: 700 }}>EquityLens</div>
+        <div style={{ fontSize: 42, fontWeight: 700 }}>MarketIQ</div>
         <div style={{ color: "#c8f06f", fontSize: 24 }}>
           Research only · {stock?.demo ? "demo data" : "dated snapshot"}
         </div>

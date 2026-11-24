@@ -1,10 +1,10 @@
-# EquityLens
+# MarketIQ
 
-EquityLens is a full-stack, explainable equity-research application. It ranks a versioned stock universe with deterministic momentum, trend, quality, value, and risk factors; shows the evidence behind each score; runs point-in-time backtests; and tracks a simulated portfolio. It never places real trades.
+MarketIQ is a full-stack, explainable equity-research application. It ranks a versioned stock universe with deterministic momentum, trend, quality, value, and risk factors; shows the evidence behind each score; runs point-in-time backtests; and tracks a simulated portfolio. It never places real trades.
 
 > For education and research only. Not investment advice. Past or simulated performance does not guarantee future results.
 
-![EquityLens dashboard](docs/screenshots/dashboard.png)
+![MarketIQ dashboard](docs/screenshots/dashboard.png)
 
 ## What is implemented
 

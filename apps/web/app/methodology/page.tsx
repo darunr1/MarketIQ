@@ -30,10 +30,10 @@ export default function Methodology() {
   return (
     <>
       <main className="article">
-        <span className="eyebrow">Methodology · equitylens-v1</span>
+        <span className="eyebrow">Methodology · Model v1</span>
         <h1>Transparent enough to reproduce.</h1>
         <p className="lead">
-          EquityLens produces a daily cross-sectional research rank. The score
+          MarketIQ produces a daily cross-sectional research rank. The score
           says where a stock sits relative to the eligible universe—not what
           must happen next.
         </p>

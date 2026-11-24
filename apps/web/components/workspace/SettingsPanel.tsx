@@ -55,7 +55,7 @@ export default function SettingsPanel() {
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement("a");
     anchor.href = url;
-    anchor.download = "equitylens-export.json";
+    anchor.download = "marketiq-export.json";
     anchor.click();
     URL.revokeObjectURL(url);
     setMessage("Export downloaded.");

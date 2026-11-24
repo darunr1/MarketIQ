@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_APP_BASE_URL ?? "http://localhost:3000",
   ),
   title: {
-    default: "EquityLens — Explainable stock research",
-    template: "%s · EquityLens",
+    default: "MarketIQ — Explainable stock research",
+    template: "%s · MarketIQ",
   },
   description:
     "Inspect transparent factor rankings, test the method honestly, and track simulated decisions.",
-  applicationName: "EquityLens",
-  openGraph: { type: "website", siteName: "EquityLens" },
+  applicationName: "MarketIQ",
+  openGraph: { type: "website", siteName: "MarketIQ" },
 };
 
 export default function RootLayout({

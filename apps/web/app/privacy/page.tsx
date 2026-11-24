@@ -8,7 +8,7 @@ export default function Privacy() {
         <span className="eyebrow">Privacy policy</span>
         <h1>Collect less. Explain what remains.</h1>
         <p>
-          EquityLens stores account identity, security sessions, onboarding
+          MarketIQ stores account identity, security sessions, onboarding
           state, watchlists, simulated research decisions, saved backtest
           configurations, email preferences, referrals, and feedback required to
           operate the product.

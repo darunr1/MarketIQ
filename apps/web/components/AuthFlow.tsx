@@ -166,7 +166,7 @@ export default function AuthFlow({ mode }: { mode: Mode }) {
       </section>
       <section className="auth-panel">
         <div className="auth-card card">
-          <span className="eyebrow">EquityLens</span>
+          <span className="eyebrow">MarketIQ</span>
           <h2 style={{ fontSize: "2rem" }}>{copy[0]}</h2>
           {message ? (
             <div className="form-grid">
