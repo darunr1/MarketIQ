@@ -31,7 +31,7 @@ export default function StockExperience({
       if (navigator.share) {
         mechanism = "native";
         await navigator.share({
-          title: `${data.symbol} research snapshot · EquityLens`,
+          title: `${data.symbol} research snapshot · MarketIQ`,
           url,
         });
         setShareMessage("Shared");

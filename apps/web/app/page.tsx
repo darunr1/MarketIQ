@@ -34,7 +34,7 @@ export default async function Home() {
             <span className="eyebrow">Explainable equity research</span>
             <h1>See the signal. Inspect the reason.</h1>
             <p className="lead">
-              EquityLens ranks a focused U.S. stock universe with transparent
+              MarketIQ ranks a focused U.S. stock universe with transparent
               momentum, trend, quality, value, and risk factors—then shows every
               input behind the score.
             </p>

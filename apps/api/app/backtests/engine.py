@@ -37,11 +37,13 @@ def backtest_metrics(
     returns = strategy.pct_change().dropna()
     total_return = strategy.iloc[-1] / initial_capital - 1
     strategy_index = pd.DatetimeIndex(strategy.index)
-    years = max((strategy_index[-1] - strategy_index[0]).days / 365.25, 1 / 365.25)
+    start_date = cast(pd.Timestamp, strategy_index[0])
+    end_date = cast(pd.Timestamp, strategy_index[-1])
+    years = max((end_date - start_date).days / 365.25, 1 / 365.25)
     cagr = (strategy.iloc[-1] / strategy.iloc[0]) ** (1 / years) - 1
-    volatility = returns.std(ddof=1) * math.sqrt(252)
     returns_mean = cast(float, returns.mean())
     returns_std = cast(float, returns.std(ddof=1))
+    volatility = returns_std * math.sqrt(252)
     sharpe = returns_mean / returns_std * math.sqrt(252) if returns_std else math.nan
     downside = returns[returns < 0]
     if len(downside) > 1:

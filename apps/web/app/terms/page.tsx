@@ -11,7 +11,7 @@ export default function Terms() {
         <Disclosure />
         <h2>Acceptable use</h2>
         <p>
-          Use EquityLens to study transparent quantitative signals and simulated
+          Use MarketIQ to study transparent quantitative signals and simulated
           decisions. Do not attempt to evade access controls, extract restricted
           provider data, overload services, or present product outputs as
           guaranteed outcomes.

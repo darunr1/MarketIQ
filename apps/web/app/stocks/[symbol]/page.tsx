@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: `${stock.symbol} ${state}, as of ${stock.as_of_date}. Inspect factor scores and data confidence. Research only.`,
     alternates: { canonical: `/stocks/${stock.symbol}` },
     openGraph: {
-      title: `${stock.symbol} · ${stock.band} · EquityLens`,
+      title: `${stock.symbol} · ${stock.band} · MarketIQ`,
       description: `Dated ${stock.as_of_date}. Confidence measures completeness and freshness, not certainty.`,
       url: `/stocks/${stock.symbol}`,
       images: [{ url: `/stocks/${stock.symbol}/opengraph-image` }],
